@@ -1,0 +1,269 @@
+.service-card {
+  background: rgba(25, 40, 65, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.service-card:hover {
+  border-color: rgba(0, 102, 204, 0.3);
+  background: rgba(25, 40, 65, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: rgba(15, 30, 50, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-om {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.service-om .label {
+  color: #a0b0c0;
+  font-weight: 600;
+}
+
+.service-om .value {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.delete-button {
+  background: rgba(220, 53, 69, 0.15);
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  color: #ff6b6b;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background: rgba(220, 53, 69, 0.3);
+  border-color: rgba(220, 53, 69, 0.5);
+}
+
+.service-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.service-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.service-field label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #a0b0c0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-field p {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 0;
+  word-break: break-word;
+}
+
+.status-selector {
+  position: relative;
+}
+
+.status-button {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #0066cc;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.status-button:hover {
+  background: rgba(0, 102, 204, 0.15);
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(15, 30, 50, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  margin-top: 4px;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.status-option {
+  width: 100%;
+  padding: 10px 12px;
+  background: none;
+  border: none;
+  border-left: 3px solid;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.status-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  background: rgba(0, 102, 204, 0.1);
+}
+
+.comment-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.repassado-selector {
+  display: flex;
+  gap: 8px;
+}
+
+.repassado-button {
+  flex: 1;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  color: #a0b0c0;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.repassado-button:hover {
+  border-color: rgba(0, 102, 204, 0.5);
+  background: rgba(0, 102, 204, 0.1);
+}
+
+.repassado-button.active {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  border-color: #0066cc;
+  color: #fff;
+}
+
+.save-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 4px;
+}
+
+.save-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.save-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    border-radius: 8px;
+  }
+
+  .service-header {
+    padding: 10px 12px;
+  }
+
+  .service-body {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .service-field label {
+    font-size: 11px;
+  }
+
+  .service-field p {
+    font-size: 13px;
+  }
+
+  .status-button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .comment-input {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .repassado-button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .save-button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
